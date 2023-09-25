@@ -16,7 +16,7 @@ public final class GetAverageGradeUseCase {
         int totalGrade = 0;
         int count = 0;
         for(String member: myTeam.getMembers()){
-            System.out.println(String.format("%d member: %s", count, member));
+            // System.out.println(String.format("%d member: %s", count, member));
             totalGrade += gradeDB.getGrade(member, course).getGrade();
             count += 1;
         }
